@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+* {
+    margin: 0;
+    Padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    background-image: url("./room.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.dino {
+    background-image: url("./jerry.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 150px;
+    background-size: cover;
+    bottom: 0;
+    position: absolute;
+    left: 12px;
+}
+
+.gameover {
+    display: flex;
+    height: 50px;
+    width: 100px;
+    visibility: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    font-weight: bold;
+    font-size: large;
+    font-size: 25px;
+    font-family: 'Ranchers', cursive;
+    background-color: antiquewhite;
+    bottom: 20px;
+}
+
+div>a {
+    text-decoration: none;
+}
+
+.dragon {
+    background-image: url("./Tom.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    Width: 250px;
+    background-size: cover;
+    bottom: 0;
+    position: absolute;
+    left: 70%;
+}
+
+.dinoAnimation {
+    animation: dinoAni 0.9s linear;
+}
+
+@keyframes dinoAni {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 500px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+.dragonAnimation {
+    animation: dragonAni 2s linear infinite;
+}
+
+@keyframes dragonAni {
+    0% {
+        left: 100vw;
+    }
+    100% {
+        left: -10vw;
+    }
+}
+
+#score {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Ranchers', cursive;
+}
